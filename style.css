@@ -53,7 +53,7 @@ body {
   color: var(--dark-charcoal);
   font-size: 14px;
   background-color: var(--soft-white);
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 /* header */
@@ -95,14 +95,16 @@ nav li a {
 
 /* main */
 main {
-  padding: 1.5rem;
+  padding: 0 1.2rem 1.2rem;
 }
 main > section {
   border-bottom: 2px solid var(--champagne-gold);
+  padding: 1.2rem 0;
 }
 h2 {
   font-size: 1.5rem;
   color: var(--midnight-blue);
+  padding: 1.2rem 0;
 }
 .offering-option {
   background-color: var(--olive-green);
@@ -114,6 +116,7 @@ h2 {
 }
 main ul {
   list-style: disc;
+  padding: 0 0.75rem;
 }
 h3 {
   font-size: 1.3rem;
@@ -125,6 +128,7 @@ h3 {
   gap: 1rem;
   grid-template-columns: 1fr;
   max-width: 100%;
+  margin: 1.3rem 0;
 }
 #gallery img {
   max-width: 100%;
@@ -160,6 +164,15 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--champagne-gold);
+}
+footer address {
+  padding: 2rem;
+}
+footer ul {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* MEDIA QUERY (medium) */
