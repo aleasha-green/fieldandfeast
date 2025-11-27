@@ -62,7 +62,6 @@ header, nav, footer {
 }
 header {
   background-color: var(--midnight-blue);
-
   padding: 1.5rem 0;
 }
 header img {
@@ -109,14 +108,45 @@ h2 {
   background-color: var(--olive-green);
   color: var(--soft-white);
   border-radius: 5px;
-  box-shadow: 1px 1px 3px var(--dark-charcoal);
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
   padding: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 h3 {
   font-size: 1.3rem;
   font-weight: 700;
   padding: 0.5rem 0;
+}
+#gallery > section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  max-width: 100%;
+}
+#gallery img {
+  max-width: 100%;
+  height: ahuto;
+  display: block;
+}
+#gallery a {
+  background-color: var(--olive-green);
+  text-decoration: none;
+  color: var(--linen);
+  font-weight: 700;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+}
+figure {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  padding: 0.5rem;
 }
 
 /* footer */
@@ -131,12 +161,21 @@ footer a {
 
 /* MEDIA QUERY (medium) */
 @media (min-width: 600px) {
+  #gallery > section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* MEDIA QUERY (large) */
 @media (min-width: 900px) {
+#gallery > section {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* MEDIA QUERY (xl) */
 @media (min-width: 1200px) {
+#gallery > section {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
