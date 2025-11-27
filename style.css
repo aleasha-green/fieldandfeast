@@ -50,6 +50,10 @@ table {
 /* GLOBAL STYLES (mobile first/small) */
 body {
   font-family: 'Playfair Display', Times, serif;
+  color: var(--dark-charcoal);
+  font-size: 14px;
+  background-color: var(--soft-white);
+  line-height: 1.2rem;
 }
 
 /* header */
@@ -58,7 +62,7 @@ header, nav, footer {
 }
 header {
   background-color: var(--midnight-blue);
-  color: var(--soft-white);
+
   padding: 1.5rem 0;
 }
 header img {
@@ -66,32 +70,59 @@ header img {
 }
 header p {
   font-style: italic;
+  color: var(--linen);
 }
 h1 {
   font-size: 3rem;
   font-weight: 700;
   padding-bottom: 1.5rem;
+  color: var(--soft-white);
 }
 
 /* nav */
 nav {
   background-color: var(--champagne-gold);
-  padding: 0.75rem 0;
 }
-nav li {
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
   font-weight: 700;
-  font-size: 1.2rem;
-  display: inline;
-
+  font-size: 1.1rem;
 }
 nav li a {
   text-decoration: none;
   color: var(--dark-charcoal);
 }
 
+/* main */
+main {
+  padding: 1.5rem;
+}
+main > section {
+  border-bottom: 2px solid var(--champagne-gold);
+}
+h2 {
+  font-size: 1.5rem;
+  color: var(--midnight-blue);
+}
+.offering-option {
+  background-color: var(--olive-green);
+  color: var(--soft-white);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px var(--dark-charcoal);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
 /* footer */
 footer {
   background-color: var(--midnight-blue);
+  color: var(--soft-white);
 }
 footer a {
   text-decoration: none;
