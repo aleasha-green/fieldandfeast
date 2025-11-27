@@ -73,7 +73,7 @@ header p {
 h1 {
   font-size: 3rem;
   font-weight: 700;
-  padding: 3rem 0 2rem;
+  padding: 2rem 0;
   color: var(--soft-white);
 }
 
