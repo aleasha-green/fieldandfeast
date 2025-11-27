@@ -51,9 +51,9 @@ table {
 body {
   font-family: 'Playfair Display', Times, serif;
   color: var(--dark-charcoal);
-  font-size: 14px;
   background-color: var(--soft-white);
   line-height: 1.3rem;
+  font-size: 18px;
 }
 
 /* header */
@@ -65,16 +65,16 @@ header {
   padding: 1.5rem 0;
 }
 header img {
-  height: 25vh;
+  height: 35vh;
 }
 header p {
   font-style: italic;
-  color: var(--linen);
+  color: var(--soft-white);
 }
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  padding-bottom: 1.5rem;
+  padding: 3rem 0;
   color: var(--soft-white);
 }
 
@@ -86,7 +86,8 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 nav li a {
   text-decoration: none;
@@ -95,14 +96,14 @@ nav li a {
 
 /* main */
 main {
-  padding: 0 1.2rem 1.2rem;
+  padding: 1.2rem;
 }
 main > section {
   border-bottom: 2px solid var(--champagne-gold);
   padding: 1.2rem 0;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--midnight-blue);
   padding: 1.2rem 0;
 }
@@ -164,12 +165,13 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--champagne-gold);
+  font-weight: 700;
 }
 footer address {
-  padding: 2rem;
+  padding: 3rem;
 }
 footer ul {
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
